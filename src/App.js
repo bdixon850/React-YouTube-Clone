@@ -31,16 +31,16 @@ class App extends React.Component {
     render() {
         const { selectedVideo, videos } = this.state;
         return (
-            <Grid justify="center" container spacing={10}>
-                <Grid item xs={12}>
+            <Grid style={{ justifyContent: 'center' }} container spacing={10}>
+                <Grid item xs={11}>
                     <Grid container spacing={10}>
                         <Grid item xs={12}>
                             <SearchBar onFormSubmit={this.handleSubmit} />
                         </Grid>
-                        <Grid item xs={8}>
+                        <Grid item xs={7}>
                             <VideoDetail video={selectedVideo}/>
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={5}>
                             <VideoList videos={videos} onVideoSelect={this.onVideoSelect} />
                         </Grid>
                     </Grid>
