@@ -7,9 +7,9 @@ const App = () => {
     const [ videos, setVideos ] = useState([]);
     const [ selectedVideo, setSelectedVideo ] = useState(null);
     // component mounted
-    useEffect(() => {
-        handleSubmit('ES6 and ES7')
-    });
+    // useEffect((e) => {
+    //     handleSubmit('ES6 and ES7');
+    // });
 
     return (
         <Grid style={{ justifyContent: 'center' }} container spacing={10}>
@@ -43,6 +43,7 @@ const App = () => {
         setVideos(videos);
         setSelectedVideo(videos[0]);
     }
+
 };
 
 export default App;
